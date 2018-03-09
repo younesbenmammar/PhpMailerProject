@@ -39,15 +39,7 @@ ob_start();
 </div>
 </div>
 
-            <div class="form-group">
-            <label for="file" class="cols-sm-2 control-label">Votre Fichier</label>
-            <div class="cols-sm-10">
-            <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-            <input type="file" class="form-control" name="file" id="file"/>
-</div>
-</div>
-</div>
+
 
 
 						<div class="form-group ">

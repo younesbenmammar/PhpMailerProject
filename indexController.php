@@ -10,7 +10,7 @@ include 'vendor/autoload.php';
 
 $receveur = $_POST["receveur"];
 $message = $_POST["message"];
-$file = $_POST["file"];
+
 
 $mail = new PHPMailer(true); // instancie un new objet phpmailer
 
@@ -28,7 +28,7 @@ try {
     $mail->setFrom($receveur);
     $mail->addAddress($receveur);     // Add a recipient
     
-    $mail->addAttachment($file);         // Add attachments
+      // Add attachments
     
     
     $mail->isHTML(true);                                  // Set email format to HTML
