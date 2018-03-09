@@ -11,7 +11,7 @@
 <link href="style/template.css" media="all" rel="stylesheet" type="text/css" />        
 </head>
 <body>
-<?= $content ?>
+<?= $content; ?>
 </body>
 <script
     src="https://code.jquery.com/jquery-3.2.1.js"
