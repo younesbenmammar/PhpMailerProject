@@ -10,7 +10,8 @@ include 'vendor/autoload.php';
 
 $receveur = $_POST["receveur"];
 $message = $_POST["message"];
-
+$emetteur = $_POST["emetteur"];
+$mdp = $_POST["mdp"];
 
 $mail = new PHPMailer(true); // instancie un new objet phpmailer
 

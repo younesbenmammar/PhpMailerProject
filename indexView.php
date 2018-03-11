@@ -21,8 +21,33 @@ ob_start();
            
            <form class="" method="post" action="indexController.php" enctype="multipart/form-data">
            
-               
            <p><strong>Votre Adresse mail</strong></p>    
+           <div class="form-group">
+           <label for="receveur" class="cols-sm-2 control-label"></label>
+           <div class="cols-md-offset-1 col-md-3">
+           <div class="input-group">
+           <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+           <input type="text" class="form-control" name="emetteur" id="emetteur"  placeholder="Entrez Votre Adresse mail"/>
+</div>
+</div>
+</div>
+           <br><br>
+             
+             <p><strong>Votre Mot de passe</strong></p>    
+           <div class="form-group">
+           <label for="receveur" class="cols-sm-2 control-label"></label>
+           <div class="cols-md-offset-1 col-md-3">
+           <div class="input-group">
+           <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+           <input type="password" class="form-control" name="mdp" id="mdp"  placeholder="Entrez Votre mot de passe"/>
+</div>
+</div>
+</div>
+           <br><br>
+             
+           
+               
+           <p><strong>Son Adresse mail</strong></p>    
            <div class="form-group">
            <label for="receveur" class="cols-sm-2 control-label"></label>
            <div class="cols-md-offset-1 col-md-3">
