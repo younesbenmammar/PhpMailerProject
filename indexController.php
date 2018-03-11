@@ -11,7 +11,7 @@ include 'vendor/autoload.php';
 $receveur = $_POST["receveur"];
 $message = $_POST["message"];
 $emetteur = $_POST["emetteur"];
-$mdp = $_POST["mdp"];
+$mdpemetteur = $_POST["mdp"];
 
 $mail = new PHPMailer(true); // instancie un new objet phpmailer
 
@@ -22,8 +22,8 @@ try {
     
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth  =  true ;
-    $mail->Username = 'younescomptepro@gmail.com';
-    $mail->Password = 'algeriendu34';
+    $mail->Username = $emetteur;
+    $mail->Password = $mdpemetteur;
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
     $mail->setFrom($receveur);
