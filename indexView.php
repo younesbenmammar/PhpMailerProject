@@ -21,7 +21,7 @@ ob_start();
            
            <form class="" method="post" action="indexController.php" enctype="multipart/form-data">
            
-           <p><strong>Votre Adresse mail</strong></p>    
+           <p><strong>Votre Adresse mail Gmail </strong></p>    
            <div class="form-group">
            <label for="receveur" class="cols-sm-2 control-label"></label>
            <div class="cols-md-offset-1 col-md-3">
