@@ -18,24 +18,23 @@ $mail = new PHPMailer(true); // instancie un new objet phpmailer
 try {
     
     //$mail->SMTPDebug = 2 ;
-    $mail->isSMTP();
+    $mail->isSMTP(); // pour dire que l'email va être envoyer via SMTP
     
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth  =  true ;
-    $mail->Username = $emetteur;
-    $mail->Password = $mdpemetteur;
+    $mail->Host = 'smtp.gmail.com';   // l'hote auquel il faut se connecter
+    $mail->SMTPAuth  =  true ;  // Le serveur exige une authentificaton 
+    $mail->Username = $emetteur; // adresse mail de celui qui envoi 
+    $mail->Password = $mdpemetteur; // mdp de celui qui envoi 
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
-    $mail->setFrom($receveur);
-    $mail->addAddress($receveur);     // Add a recipient
+    $mail->setFrom($receveur); // adresse de celui qu recoit
+    $mail->addAddress($receveur);     // Ajoute une autre adresse
     
       // Add attachments
     
     
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Planning de la Semaine';
-    $mail->Body    = $message;
-    $mail->AltBody = 'Bienvenue a tous';
+    $mail->isHTML(true);                                  // Format Html
+    $mail->Subject = " Test pour l'exposé "; // Sujet du mail 
+    $mail->Body    = $message; // message du mail (corps)
     $mail->send();
     echo 'Message Envoyé';
     

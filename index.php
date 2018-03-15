@@ -1,13 +1,3 @@
-<?php
-
-
-
-
-
-
-
-?>
-
 <!doctype html>
     <html lang="fr">
     <head>
@@ -23,7 +13,7 @@
 <body>
 
 
-<h1>L'adresse mail que vous utiliser pour envoyer le mail doit etre Gmail</h1>
+<h1>L'adresse mail que vous utiliser pour envoyer le mail doit être Gmail</h1>
 
  <div class="form-group ">
                            <a href="indexView.php"><button id="button" class="btn btn-primary btn-lg btn-block login-button">J'accepte</button></a>               
